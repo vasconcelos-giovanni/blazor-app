@@ -4,3 +4,9 @@ obj
 publish
 out
 .fake
+
+# Visual Studio
+.vscode/
+.vscode/**/*
+.vscode/launch.json
+.vscode/tasks.json
