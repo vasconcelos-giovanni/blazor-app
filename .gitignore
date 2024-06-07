@@ -1,0 +1,6 @@
+# Ignore build and publish outputs
+bin
+obj
+publish
+out
+.fake
