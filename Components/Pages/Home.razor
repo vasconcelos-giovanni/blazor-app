@@ -1,7 +1,51 @@
 ﻿@page "/"
+@rendermode InteractiveServer
 
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
 
 Welcome to your new app.
+
+<Counter IncrementAmount="10" />
+
+<section>
+    <h2 class="mt-3">God names</h2>
+
+    <ul>
+        @foreach (string godName in godNames)
+        {
+            <li>@godName</li>
+        }
+    </ul>
+</section>
+
+<section>
+    <h2>Input tests</h2>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Username</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+            aria-describedby="basic-addon1" @oninput="IncrementUsernameChangesCounter" />
+    </div>
+    <p class="text-danger">@usernameChangesCounter changes in "@userInput"</p>
+</section>
+
+@code {
+    /* -------------------------------------------------------------------------- */
+    /* God names <ul> */
+    /* -------------------------------------------------------------------------- */
+    string[] godNames = { "Yhwh", "Jehovah", "Yahweh" };
+
+    /* -------------------------------------------------------------------------- */
+    /* Username <input> */
+    /* -------------------------------------------------------------------------- */
+    private int usernameChangesCounter = 0;
+    private string userInput = "";
+
+    private void IncrementUsernameChangesCounter(ChangeEventArgs thisEvent)
+    {
+        usernameChangesCounter++;
+        userInput = (string)thisEvent.Value;
+    }
+}
