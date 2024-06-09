@@ -28,8 +28,11 @@
     protected override void OnInitialized()
     {
 
-        todos.Add(new TodoItem { Title = "Go to work" });
-        todos.Add(new TodoItem { Title = "Go study", IsDone = true });
+        todos.Add(new TodoItem { Title = "Go to work", IsDone = true });
+        todos.Add(new TodoItem { Title = "Go study" });
+        todos.Add(new TodoItem { Title = "Feed dog", IsDone = true });
+        todos.Add(new TodoItem { Title = "Clean dishes" });
+
     }
 
     private void AddTodo()
