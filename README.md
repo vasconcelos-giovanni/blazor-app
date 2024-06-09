@@ -2,7 +2,7 @@
 
 I created a simple web app for a To-do List while studying the modules [Build your first web app with Blazor](https://learn.microsoft.com/en-us/training/modules/build-your-first-blazor-web-app/) and [Build a to-do list with Blazor](https://learn.microsoft.com/en-us/training/modules/build-blazor-todo-list/) from the course [Build web apps with Blazor](https://learn.microsoft.com/en-us/training/paths/build-web-apps-with-blazor/) on my [Microsoft Learn Journey](https://learn.microsoft.com/en-us/users/giovannivasconcelos-3027/).
 
-## 🔧  Technologies
+## :wrench:  Technologies
 
 ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
 ![Blazor](https://img.shields.io/badge/blazor-%235C2D91.svg?style=for-the-badge&logo=blazor&logoColor=white)
