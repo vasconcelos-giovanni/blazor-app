@@ -1,6 +1,8 @@
 ﻿@page "/todo"
 @rendermode InteractiveServer
 
+<PageTitle>Todo List</PageTitle>
+
 <h3>Todo (@todos.Count(todo => !todo.IsDone))</h3>
 
 <ul class="list-group">
